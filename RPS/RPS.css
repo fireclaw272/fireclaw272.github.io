@@ -77,6 +77,7 @@ padding-right:40px;
 
 .images img{
 width:15vw;
+max-width:200px;
 }
 
 .result{
