@@ -97,7 +97,7 @@ color:#F1BA59;
 #cone{
 position:absolute;
 mix-blend-mode: multiply;
-width:15vw;
+width:10vw;
 top:230px;
 left:6vw;
 }
@@ -107,7 +107,7 @@ position:absolute;
 mix-blend-mode: multiply;
 top:210px;
 right:3vw;
-width:25%;
+width:15vw;
 }
 
 .ingredients ul{
