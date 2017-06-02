@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var main = function(){
 	
 	$('<div>').appendTo('#body').addClass('menu-btn');
@@ -90,5 +90,4 @@ var main = function(){
 	});
 };
 
->>>>>>> 3a1325c5fee08fe58648afd81e064057ba3903fd
 $(document).ready(main);
