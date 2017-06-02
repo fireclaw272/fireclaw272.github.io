@@ -1,0 +1,13 @@
+html{
+min-height:100%;
+}
+
+h1{
+text-align:center;
+}
+
+#canvasContainer{
+margin:auto;
+width:800px;
+margin-top:60px;
+}
