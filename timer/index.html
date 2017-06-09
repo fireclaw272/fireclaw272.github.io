@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Timer.css">
+		<link type="text/css" rel="stylesheet" href="Menu.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="Timer.js"></script>
+		<script src="Menu.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head">
+				<div>
+					<h1 class="heading">Timer</h1>
+				</div>
+			</div>
+			<div id="body">
+				<div class="switch">
+					<div id="timerButton" class="currentMode">
+						<p>Timer</p>
+					</div>
+					<div id="stopwatchButton">
+						<p>Stopwatch</p>
+					</div>
+				</div>
+				<div class="overallTimer">
+					<div class="timer">
+						<div class="counter" id="tensMinute">
+							<div id="tensMinuteUp">+</div>
+						
+							<div id="tensMinuteDown">-</div>
+						</div>
+						<div class="counter" id="minute">
+							<div id="minuteUp">+</div>
+							
+							<div id="minuteDown">-</div>
+						</div>
+						<div class="counter" id="colon">
+							<p>:</p>
+						</div>
+						<div class="counter" id="tensSecond">
+							<div id="tensSecondUp">+</div>
+							
+							<div id="tensSecondDown">-</div>
+						</div>
+						<div class="counter" id="second">
+							<div id="secondUp">+</div>
+							
+							<div id="secondDown">-</div>
+						</div>
+					</div>
+					<div class="controls">
+						<div class="start">
+							<p>Start</p>
+						</div>
+						<div class="pause">
+							<p>Pause</p>
+						</div>
+						<div class="reset">
+							<p>Reset</p>
+						</div>
+						<br/>
+						<div class="stop" id="stop">
+							<p>Stop</p>
+						</div>
+					</div>
+					<div class="alarmOpen">
+						<p id="leftArrow"><</p>
+					</div>
+					<div class="alarmMenu">
+						<div id="alarmClock" class="currentSound">
+							<img src="alarmClock.png"/>
+						</div>
+						<div id="beep">
+							<img src="wristWatch.png"/>
+						</div>
+						<div id="fireAlarm">
+							<img src ="fireAlarm.png"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="overallStopwatch">
+					<div class="stopwatchCounter">
+						<div id="stopwatchMinute">
+						</div>
+						<div id="stopwatchColon">
+							<p>:</p>
+						</div>
+						<div id="stopwatchTensSecond">
+						</div>
+						<div id="stopwatchSecond">
+						</div>
+						<div id="stopwatchPeriod">
+							<p>.</p>
+						</div>
+						<div id="stopwatchMs">
+						</div>
+					</div>
+					<div class="stopwatchController">
+						<div id="startStop">
+							<p>Start</p>
+						</div>
+						<div id="lap">
+							<p>Lap</p>
+						</div>
+						<div id="restart">
+							<p>Restart</p>
+						</div>
+					</div>
+					<div class="lapContainer">
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
