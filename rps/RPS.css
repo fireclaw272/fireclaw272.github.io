@@ -1,0 +1,133 @@
+html{
+min-height:100%;
+}
+
+body{
+background: url("http://www.studio-allegory.com/wp-content/uploads/2014/12/background-gray-linen.jpg");
+margin:0px;
+padding:0px;
+min-height:100%;
+}
+
+#container{
+min-height:100%;
+position:relative;
+}
+
+#header{
+padding:10px;
+padding-top:25px;
+}
+
+#body{
+padding-bottom:30px;
+}
+
+#footer{
+position:absolute;
+bottom:0;
+width:100%;
+height:30px;
+}
+
+#header h1{
+font-size:64px;
+text-align:center;
+margin-bottom:60px;
+margin-left:25vw;
+margin-right:25vw;
+width:50vw;
+}
+
+#header p{
+font-size:22px;
+text-align:center;
+font-family:Verdana;
+}
+
+.button{
+text-align:center;
+position:relative;
+top:20vh;
+}
+
+.button p{
+color:white;
+display:none;
+padding:15px;
+border: 2px solid #1B18D8;
+border-radius: 15px;
+margin:0px;
+background-color:#59A6EE;
+font-family:Verdana;
+font-weight:bold;
+}
+
+#choices{
+text-align:center;
+position:relative;
+top:10vh;
+}
+
+.images{
+display:inline-block;
+padding-left:40px;
+padding-right:40px;
+}
+
+.images img{
+width:15vw;
+max-width:200px;
+}
+
+.result{
+font-size:32px;
+text-align:center;
+position:relative;
+top:10vh;
+margin-bottom:40px;
+font-weight:bold;
+font-family:Garamond;
+}
+
+.score{
+font-size:125px;
+font-weight:bold;
+position:absolute;
+margin:0px;
+font-family:cursive;
+}
+
+.User{
+top:16vh;
+right:81vw;
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+}
+
+.Computer{
+top:16vh;
+left:81vw;
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+}
+
+.scoreLabel{
+font-size:25px;
+width:122.078px;
+text-align:center;
+}
+
+.sUser{
+position:absolute;
+top:12vh;
+left:11vw;
+}
+
+.sComputer{
+position:absolute;
+top:12vh;
+right:11vw;
+}

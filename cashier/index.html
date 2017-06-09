@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Cashier.css">
+		<link type="text/css" rel="stylesheet" href="Menu.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="Cashier.js"></script>
+	</head>
+	
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Cash Register</h1>
+			</div>
+			<div id="body">
+				<div class="products">
+					<div class="pic">
+						<div class="pair">
+							<img class="apple" src="Apple.png"/><br>
+							<p id="apple-price">$0.98 ea</p>
+						</div>
+						<div  class="pair">
+							<img class="banana" src="Banana.png"/><br>
+							<p id="banana-price">$0.75 ea</p>
+						</div>
+						<div  class="pair">
+							<img class="cookie" src="Cookie.png"/><br>
+							<p>3 for $1 <br> $0.70 ea</p>
+						</div>
+						<div class="pair">
+							<img class="doughnut" src="Doughnut.png"/><br>
+							<p>12 for $8 <br> $0.90 ea</p>
+						</div>
+					</div>
+				</div>	
+				<div class="money">
+					<p>$0.00</p> </br>
+					<button class="increaseAmount">+$0.01</button>
+				</div>
+				<div class="button">
+					<div class="counter">
+						<div class="arrow">
+							<div id="apple-arrow">
+								<p id="left" class="apple-left">-</p>
+								<p class="amount" id="apple-amount">0</p>
+								<p id="right" class="apple-right">+</p>
+							</div>
+							<div id="banana-arrow">
+								<p id="left" class="banana-left">-</p>
+								<p class="amount" id="banana-amount">0</p>
+								<p id="right" class="banana-right">+</p>
+							</div>
+							<div id="cookie-arrow">
+								<p id="left" class="cookie-left">-</p>
+								<p class="amount" id="cookie-amount">0</p>
+								<p id="right" class="cookie-right">+</p>
+							</div>
+							<div id="donut-arrow">
+								<p id="left" class="donut-left">-</p>
+								<p class="amount" id="donut-amount">0</p>
+								<p id="right" class="donut-right">+</p>
+							</div>
+						</div>
+					</div>
+					<div class="payment">
+						<div id="subtotal">
+							<p>Subtotal:</p>
+							<p id="subtotal-cost">0</p>
+						</div>
+						<div id="tax">
+							<p>Tax:</p>
+							<p id="tax-cost">0</p>
+						</div>
+						<div id="total">
+							<p>Total:</p>
+							<p id="total-cost">0</p>
+						</div>
+					</div>
+				</div>
+				<div class="checkout">
+					<p>Pay</p>
+				</div>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>

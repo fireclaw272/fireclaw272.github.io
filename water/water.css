@@ -1,0 +1,71 @@
+html{
+min-height:100%;
+overflow-x:hidden;
+}
+
+#container{
+text-align:center;
+}
+
+h1{
+font-size:60px;
+padding-top:30px;
+}
+
+#waterGlass p{
+font-size:40px;
+padding:0px;
+padding-bottom:5px;
+margin-bottom:0px;
+font-family:Garamond;
+}
+
+#waterAmount div{
+display:inline-block;
+font-size: 25px;
+}
+
+#weight, #alreadyDrank, #instruction{
+font-size:20px;
+width:50vw;
+margin:auto;
+}
+
+#manualAdd{
+position:relative;
+top:0px;
+left:0px;
+}
+
+#manualAdd p{
+color:white;
+display:inline-block;
+padding:8px;
+border: 2px solid #1B18D8;
+border-radius: 15px;
+margin:0px;
+background-color:#59A6EE;
+font-family:Verdana;
+font-weight:bold;
+}
+
+#toolTip{
+font-size:15px;
+width:400px;
+position:absolute;
+top:0px;
+left:0px;
+background-color:#555;
+color:white;
+z-index:1;
+border-radius:15px;
+padding:5px;
+visibility:hidden;
+transition:opacity 1s;
+opacity:0;
+}
+
+#weight:hover #toolTip{
+visibility:visible;
+opacity:1;
+}
