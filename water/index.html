@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Menu.css">
+		<link type="text/css" rel="stylesheet" href ="water.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="water.js"></script>
+		<script src="Menu.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>Daily water reminder</h1>
+			</div>
+			<div id="body">
+				<div id="waterGlass">
+					<p id="waterGlassPercent">100% Left</p>
+					<img id="image" src="100%.png"/>
+				</div>
+				<div id="manualAdd">
+					<p id="manualAddButton">Add</p>
+				</div>
+				<div id="waterAmount">
+					<div id="waterDrank">
+						<p>--oz</p>
+					</div>
+					<div id="slash">
+						<p>/</p>
+					</div>
+					<div id="waterTotal">
+						<p>--oz</p>
+					</div>
+				</div>
+				<div id="instruction">
+					<p>This page will remind you at the top of every hour to drink water.When the time comes, a pop-up will appear and you can type how much water you just drank.</p>
+				</div>
+				<br/>
+				<form id="weight">
+					<p>To find out how much water you need per day please enter your weight here in pounds:</p>
+			
+					<p id="toolTip"><strong>Disclaimer:</strong> The amount of water you need everyday is not only reliant on weight, there are other factors that affect this value.</p>
+				</form>
+				<input type="text" value="0" id="weightInputId">
+				<br/>
+				<form id="alreadyDrank">
+					<p>How much water have you had today?</p>
+					
+				</form>
+				<input type="text" id="alreadyDrankForm" value="0" >
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+
+</html>

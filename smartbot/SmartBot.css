@@ -1,0 +1,124 @@
+html{
+height:100%;
+}
+
+body{
+background-image: url("http://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/18.jpg");
+margin:0px;
+padding:0px;
+height:100%;
+}
+
+#container{
+min-height:100%;
+position:relative;
+}
+
+#header{
+padding:10px;
+}
+
+#body{
+padding:10px;
+padding-bottom:30px;
+min-height:100%;
+}
+
+#footer{
+position:absolute;
+bottom:0;
+width:100%;
+height:30px;
+}
+
+#header h1{
+text-align:center;
+Font-size:64px;
+font-family:Courier;
+}
+
+#header p{
+text-align:center;
+font-size:28px;
+font-family:Verdana;
+}
+
+.thought-box{
+width: 50%;
+position:relative;
+left:25vw;
+right:25vw;
+margin:10px;
+}
+
+.question{
+list-style-type:none;
+padding:0px;
+width:45vw;
+margin:10px;
+display:inline-block;
+position:relative;
+left:10vw;
+clear:both;
+}
+
+.question-list-format{
+word-wrap: break-word;
+background-color:white;
+border: 2px solid #909090;
+border-radius:15px;
+margin-bottom: 10px;
+min-height:25px;
+padding:5px;
+padding-left:40px;
+font-size:22px;
+text-align:left;
+}
+
+.reply{
+list-style-type:none;
+padding:0px;
+width:45vw;
+margin:10px;
+position:relative;
+right:-43vw;
+}
+
+.reply-list-format{
+word-wrap: break-word;
+background-color:white;
+border: 2px solid #909090;
+border-radius:15px;
+margin-bottom: 10px;
+min-height:25px;
+padding:5px;
+padding-right:40px;
+font-size:22px;
+text-align:right;
+}
+
+#button{
+display:inline-block;
+margin-bottom:15px;
+position:relative;
+left:47vw;
+}
+
+.button{
+text-decoration:none;
+margin:0px;
+Font-size:20px;
+color:white;
+padding:5px 9px 5px 9px;
+background-color:#0086D8;
+border: 1px solid #68B9EC;
+border-radius:7px;
+}
+
+.menu li{
+padding:0px;
+}
+
+
+
+
