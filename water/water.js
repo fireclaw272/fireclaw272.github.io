@@ -49,70 +49,70 @@ window.onload = function(){
 			var waterImage = document.getElementById('image');
 			switch(true){
 				case (percent <= 0):
-					waterImage.src = "0%.png";
+					waterImage.src = "0.png";
 					break
 				case (percent <= 5):
-					waterImage.src = "5%.png";
+					waterImage.src = "5.png";
 					break;
 				case (percent <= 10):
-					waterImage.src = "10%.png";
+					waterImage.src = "10.png";
 					break;
 				case (percent <= 15):
-					waterImage.src = "15%.png";
+					waterImage.src = "15.png";
 					break;
 				case (percent <= 20):
-					waterImage.src = "20%.png";
+					waterImage.src = "20.png";
 					break;
 				case (percent <= 25):
-					waterImage.src = "25%.png";
+					waterImage.src = "25.png";
 					break;
 				case (percent <= 30):
-					waterImage.src = "30%.png";
+					waterImage.src = "30.png";
 					break;
 				case (percent <= 35):
-					waterImage.src = "35%.png";
+					waterImage.src = "35.png";
 					break;
 				case (percent <= 40):
-					waterImage.src = "40%.png";
+					waterImage.src = "40.png";
 					break;
 				case (percent <= 45):
-					waterImage.src = "45%.png";
+					waterImage.src = "45.png";
 					break;
 				case (percent <= 50):
-					waterImage.src = "50%.png";
+					waterImage.src = "50.png";
 					break;
 				case (percent <= 55):
-					waterImage.src = "55%.png";
+					waterImage.src = "55.png";
 					break;
 				case (percent <= 60):
-					waterImage.src = "60%.png";
+					waterImage.src = "60.png";
 					break;
 				case (percent <= 65):
-					waterImage.src = "65%.png";
+					waterImage.src = "65.png";
 					break;
 				case (percent <= 70):
-					waterImage.src = "70%.png";
+					waterImage.src = "70.png";
 					break;
 				case (percent <= 75):
-					waterImage.src = "75%.png";
+					waterImage.src = "75.png";
 					break;
 				case (percent <= 80):
-					waterImage.src = "80%.png";
+					waterImage.src = "80.png";
 					break;
 				case (percent <= 85):
-					waterImage.src = "85%.png";
+					waterImage.src = "85.png";
 					break;
 				case (percent <= 90):
-					waterImage.src = "90%.png";
+					waterImage.src = "90.png";
 					break;
 				case (percent <= 95):
-					waterImage.src = "95%.png";
+					waterImage.src = "95.png";
 					break;
 				case (percent <= 100):
-					waterImage.src = "100%.png";
+					waterImage.src = "100.png";
 					break;
 				default:
-					waterImage.src = "50%.png"
+					waterImage.src = "50.png"
 					
 			}
 		}
