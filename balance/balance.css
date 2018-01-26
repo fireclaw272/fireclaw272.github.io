@@ -1,0 +1,103 @@
+.coin{
+    background-color:silver;
+    width:50px;
+    height:50px;
+    display:inline-block;
+    border-radius:100%;
+    text-align: center;
+    font-weight:bold;
+    margin-right:10px;
+    margin-bottom:30px;
+    cursor: pointer;
+}
+.balance{
+    text-align:center;
+    width:850px;
+    margin:auto;
+}
+.balance div{
+    width:420px;
+    height:50px;
+    display:inline-block;
+    line-height: 50px;
+}
+.coinContainer{
+    width:850px;
+    margin:auto;
+    text-align:center;
+}
+/*#leftSideLabel{
+    background-color:lightskyblue;
+}
+#rightSideLabel{
+    background-color: lightcoral;
+}
+
+#leftSide{
+    height:400px;
+    width:420px;
+    display:inline-block;
+    background-color: antiquewhite;
+}*/
+#leftSide, #rightSide{
+    width:420px;
+    display:inline-block;
+}
+
+#leftSideBank, #rightSideBank{
+    height:400px;
+    width:100%;
+    background-color: antiquewhite;
+    margin-bottom: 0px;
+}
+#leftSideLabel{
+    background-color: lightskyblue;
+    margin-top:0px;
+}
+#rightSideLabel{
+    background-color: lightcoral;
+    margin-top:0px;
+}
+ul{
+    list-style-type: none;
+}
+.selected{
+    background-color:darkgray;
+}
+#buttonContainer{
+    width:850px;
+    margin:auto;
+    text-align:center;
+    margin-top:60px;
+}
+
+.button{
+    display:inline-block;
+    width: 110px;
+    text-align:center;
+    background-color:#59A6EE;
+    border:2px solid #1B18D8;
+    border-radius:20px;
+    padding:15px 10px;
+    font-size:21px;
+    margin:auto;
+    margin-left:70px;
+    margin-right:70px;
+    cursor:pointer;
+}
+
+#comparisonContainer{
+    width:850px;
+    margin:auto;
+    margin-top:20px;
+}
+
+.icon{
+    width:75px;
+    height:75px;
+    margin:0px 174px;
+    display:inline-block;
+}
+hgroup{
+    text-align:center;
+}

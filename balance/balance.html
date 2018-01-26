@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="balance.css">
+        <script src="balance.js"></script>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1>Coin Balance</h1>
+                <h3>Left click the coin to add it to the left side of the balance. Right click it to add it to the right side. The reset button will remove all coin from the balance. When you are ready to give an answer, click the answer button.</h3>
+                <h4>The problem is: you have 12 coins, all except one has the same mass. You have a balance, but you can only use it three times. How do you find the odd one out.</h4>
+            </hgroup>
+        </header>
+        <div id="container">
+            <div class="coinContainer">
+                <div class="coin" id="coin1"><p>1</p></div>
+                <div class="coin" id="coin2"><p>2</p></div>
+                <div class="coin" id="coin3"><p>3</p></div>
+                <div class="coin" id="coin4"><p>4</p></div>
+                <div class="coin" id="coin5"><p>5</p></div>
+                <div class="coin" id="coin6"><p>6</p></div>
+                <div class="coin" id="coin7"><p>7</p></div>
+                <div class="coin" id="coin8"><p>8</p></div>
+                <div class="coin" id="coin9"><p>9</p></div>
+                <div class="coin" id="coin10"><p>10</p></div>
+                <div class="coin" id="coin11"><p>11</p></div>
+                <div class="coin" id="coin12"><p>12</p></div>
+            </div>
+            <div class="balance">
+                <div id="leftSide">
+                    <div id="leftSideBank">
+                        <p>Coins on left side of balance</p>
+                    </div> 
+                    <div id="leftSideLabel">Left Side (blue)</div>
+                </div> 
+                <div id="rightSide">
+                    <div id="rightSideBank">
+                        <p>Coins on right side of balance</p>
+                    </div>
+                    <div id="rightSideLabel">Right Side (red)</div>
+                </div>  
+            </div>
+            
+            <div id="comparisonContainer">
+                <img id="leftIcon" class="icon" src="images/equalSign.png">
+                <img id="rightIcon" class="icon" src="images/equalSign.png">
+            </div>
+            
+            <div id="buttonContainer">
+                <p class="button" id="reset">Reset Scale</p>
+                <p class="button" id="weigh">Weigh</p>
+                <p class="button" id="answer">Answer</p>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
