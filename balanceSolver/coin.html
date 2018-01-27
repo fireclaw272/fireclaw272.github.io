@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="coinBalance.css">
+        <script>
+        window.onload = function(){
+            //choose random coin
+            var randomCoin = Math.floor(Math.random()*12)
+            var randomCoinSee = randomCoin +1
+            console.log("random coin is: " + randomCoinSee); 
+            //assign weight to coins
+            var coins = [];
+            for(var i= 0; i<12; i++){
+                if(i == randomCoin){
+                    var heavyOrLight = Math.floor(Math.random*2);
+                    if(heavyOrLight == 0){
+                       coins.push({
+                           weight:1.5,
+                       })
+                        console.log("heavier");
+                    }
+                    else{
+                        coins.push({
+                            weight:0.5,
+                        })
+                        console.log("lighter");
+                    }
+                }
+                else{
+                    coins.push({
+                        weight:1,
+                    })
+                }
+            }
+            console.log(coins);
+            
+            //function to post words
+            function post(phrase){
+                var paragraphHolder = document.getElementById('steps');
+                var paragraph = document.createElement('p');
+                var text = document.createTextNode(phrase);
+                paragraph.appendChild(text);
+                paragraphHolder.appendChild(paragraph); 
+            }
+            
+            //function to find coin
+            function weigh(){
+                var firstSet1 = coins[0].weight + coins[1].weight + coins[2].weight + coins[3].weight;
+                var secondSet1 = coins[4].weight + coins[5].weight + coins[6].weight + coins[7].weight;
+                console.log(firstSet1);
+                console.log(secondSet1);
+                
+                if(firstSet1 == secondSet1){// if 1,2,3,4 is equal to 5,6,7,8
+                    post("1,2,3,4 is equal to 5,6,7,8 so different coin must be 9,10,11, or 12");
+                    var firstSet2 = coins[0].weight + coins[1].weight;
+                    var secondSet2 = coins[8].weight + coins[9].weight;
+                    if(firstSet2 == secondSet2){ //if coin 9 10 is same as 1 2
+                        post("1,2 is equal to 9,10 so different coin must be 11 or 12");
+                        var firstSet3 = coins[0].weight;
+                        var secondSet3 = coins[10].weight;
+                        if(firstSet3 == secondSet3){
+                            post("1 is equal to 11 so different coin must be 12");
+                           }
+                        else{
+                            post("1 is not equal to 11 so different coin must be 11");
+                        }
+                    }
+                    else{//if coin 9 10 is different from 1 2
+                        post("1,2 is not equal to 9,10 so different coin must be 9 or 10");
+                        var firstSet4 = coins[0].weight;
+                        var secondSet4 = coins[8].weight;
+                        if(firstSet4 == secondSet4){
+                            post("1 is equal to 9 so different coin must be 10");
+                        }
+                        else{
+                            post("1 is not equal to 9 so different coin must be 9");
+                        }
+                    }
+                }
+                else{// if coin 1 2 3 4 does not equal coin 5 6 7 8
+                     if(firstSet1 > secondSet1){// if coin 1 2 3 4 goes down
+                        post("1,2,3,4 is heavier than 5,6,7,8 so different coin must be 1,2,3,4,5,6,7, or 8");
+                        var firstSet5 = coins[0].weight + coins[1].weight + coins[4].weight;
+                        var secondSet5 = coins[2].weight + coins[3].weight + coins[5].weight;
+                        if(firstSet5 == secondSet5){//if coins 1 2 5 are equal to 3 4 6
+                            post("1,2,5 is equal to 3,4,6 so different coin must be 7 or 8")
+                            var firstSet6 = coins[8].weight;
+                            var secondSet6 = coins[6].weight;
+                            if(firstSet6 == secondSet6){//if coins 7 and 9 are equal
+                                post("7 and 9 are equal so different coin must be 8");
+                            }
+                            else{//if coins 7 and 9 aren't equal
+                                post("7 and 9 aren't equal so different coin must be 7");
+                            }
+                        
+                        }
+                        else if(firstSet5 > secondSet5){//if coins 1 2 5 goes down
+                            post("1,2,5 is heavier than 3,4,6 so different coin must be 1,2, or 6")
+                            var firstSet7 = coins[0].weight;
+                            var secondSet7 = coins[1].weight;
+                            if(firstSet7 == secondSet7){//if coins 1 and 2 are equal
+                                post("1 and 2 are equal so different coin must be 6");
+                            }
+                            else if(firstSet7 > secondSet7){//if coin 1 is heavier than coin 2
+                                post("1 is heavier than 2  so different coin must be 1");
+                            }
+                            else{//if coin 1 is lighter than coin 2
+                                post("2 is heavier than 1 so different coin must be 2 ");
+                            }
+                        }
+                        else{//if coins 1 2 5 go up
+                            post("1,2,5 is lighter than 3,4,6 so different coin must be 5,3, or 4");
+                            var firstSet8 = coins[2].weight;
+                            var secondSet8 = coins[3].weight;
+                            if(firstSet8 == secondSet8){//if coins 3 and 4 are equal
+                                post("3 and 4 are equal so different coin must be 5");
+                            }
+                            else if(firstSet8 > secondSet8){//if coin 3 is heavier than coin 4
+                                post("3 is heavier than 4  so different coin must be 3");
+                            }
+                            else{//if coin 3 is lighter than coin 4
+                                post("4 is heavier than 3 so different coin must be 4 ");
+                            }
+                        }
+                       
+                    }
+                    else if(firstSet1 < secondSet1){// if coin 1 2 3 4 goes up
+                        post("1,2,3,4 is lighter than 5,6,7,8 so different coin must be 1,2,3,4,5,6,7, or 8"); 
+                        var firstSet9 = coins[0].weight + coins[1].weight + coins[4].weight;
+                        var secondSet9 = coins[2].weight + coins[4].weight + coins[5].weight;
+                        if(firstSet9 == secondSet9){//if 1,2,5 is equal to 3,4,6
+                            post("1,2,5 is equal to 3,4,6 so different coin must be 7 or 8")
+                            var firstSet10 = coins[8].weight;
+                            var secondSet10 = coins[6].weight;
+                            if(firstSet10 == secondSet10){//if 7 equals 9
+                               post("7 and 9 are equal so different coin must be 8");
+                            }
+                            else{//if 7 doesn't equal 9
+                               post("7 and 9 aren't equal so different coin must be 7");
+                            }
+                        }
+                        else if(firstSet9 < secondSet9){//if 1,2,5 is lighter than 3,4,6
+                            post("1,2,5 is lighter than 3,4,6 so different coin must be 1,2, or 6")
+                            var firstSet11 = coins[0].weight;
+                            var secondSet11 = coins[1].weight;
+                            if(firstSet11 == secondSet11){//if 1 and 2 are equal
+                               post("1 and 2 are eqaul so different coin must be 6");
+                            }
+                            else if(firstSet11 < secondSet11){//if 1 is lighter than 2
+                                post("1 is lighter than 2 so different coin must be 1");
+                            }
+                            else{//if 2 is lighter than 1
+                                post("2 is lighter than 1 so different coin must be 2");
+                            }
+                            
+                        }
+                        else{//if 1,2,5 is heavier than 3,4,6
+                            post("1,2,5 is heavier than 3,4,6 so different coin must be 5,3, or 4");
+                            var firstSet12 = coins[2].weight;
+                            var secondSet12 = coins[3].weight;
+                            if(firstSet12 == secondSet12){//if 3 and 4 are equal
+                               post("3 and 4 are equal so different coin must be 5")
+                            }
+                            else if(firstSet12 < secondSet12){// if 3 is lighter than 4
+                                post("3 is lighter than 4 so different coin must be 3")
+                            }
+                            else{// if 4 is lighter than 3
+                                post("4 is lighter than 3 so different coin must be 4")
+                            }
+                        }
+                    }
+                }
+                
+                
+                
+                
+            };
+    
+            weigh();
+            
+        }
+        
+        </script>
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1>Coin finder</h1>
+            </hgroup>
+        </header>
+        <div id="container">
+            <div id="coinContainer">
+                <div class="coin" id="coin1"><p>1</p></div>
+                <div class="coin" id="coin2"><p>2</p></div>
+                <div class="coin" id="coin3"><p>3</p></div>
+                <div class="coin" id="coin4"><p>4</p></div>
+                <div class="coin" id="coin5"><p>5</p></div>
+                <div class="coin" id="coin6"><p>6</p></div>
+                <div class="coin" id="coin7"><p>7</p></div>
+                <div class="coin" id="coin8"><p>8</p></div>
+                <div class="coin" id="coin9"><p>9</p></div>
+                <div class="coin" id="coin10"><p>10</p></div>
+                <div class="coin" id="coin11"><p>11</p></div>
+                <div class="coin" id="coin12"><p>12</p></div>
+            </div>
+            <div id="steps">
+            
+            </div>
+        </div>
+    </body>
+</html>
