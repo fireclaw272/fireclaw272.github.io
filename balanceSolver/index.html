@@ -127,7 +127,7 @@
                     else if(firstSet1 < secondSet1){// if coin 1 2 3 4 goes up
                         post("1,2,3,4 is lighter than 5,6,7,8 so different coin must be 1,2,3,4,5,6,7, or 8"); 
                         var firstSet9 = coins[0].weight + coins[1].weight + coins[4].weight;
-                        var secondSet9 = coins[2].weight + coins[4].weight + coins[5].weight;
+                        var secondSet9 = coins[2].weight + coins[3].weight + coins[5].weight;
                         if(firstSet9 == secondSet9){//if 1,2,5 is equal to 3,4,6
                             post("1,2,5 is equal to 3,4,6 so different coin must be 7 or 8")
                             var firstSet10 = coins[8].weight;
