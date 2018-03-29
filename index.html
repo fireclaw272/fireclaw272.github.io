@@ -1,23 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="Homepage.css">
-		<link type="text/css" rel="stylesheet" href="Menu.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="Homepage.js"></script>
-		<script src="Menu.js"></script>
-	</head>
-	
-	<body>
-	<div id="container">
-		<div id="header">
-			<h1>Welcome To My Website!!</h1>
-		</div>
-		<div id="body">
-			<p id="intro">Hello! My name is Benson and I am currently practicing how to make a website.</p>
-		</div>
-		<div id="footer">
-		</div>
-	</div>
-	</body>
+    <head>
+        <link type="text/css" rel="stylesheet" href="anime.css">
+        <script src="anime.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id=header>
+            </div>
+            <div id="body">
+                <audio id="audio" src="assets/yumetourou.mp3"></audio>
+                <video id="video" autoplay loop src="assets/kimiNoNaWa.mp4"></video>
+                <!--<div id="dampener"><p>Hello</p></div>-->
+                <div id="controller"> <!-- play pause forward backward volumeControl?-->
+                    <p id=name>Name of song goes here</p>
+                    <p id=author>author's name goes here</p>
+                    <img id="shuffle" src="assets/shuffle.png">
+                    <img id="backBtn" src="assets/backward.png">
+                    <img id="playPause" src="assets/play.png">
+                    <img id="forwardBtn" src="assets/forward.png">
+                    <img id="loop" src="assets/loop.png">
+                    <!--<img id="volume" src="assets/volume.png">-->
+                    <div id="volumeContainer">
+                        <div id="currentVolume"></div>
+                    </div>
+                    <input id="timeBar" type="range" value=0>
+                    <p class="timeDisplay" id="currentTime">0:00</p>
+                    <p class="timeDisplay" id="maxTime">2:11</p>
+                </div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </body>
 </html>
