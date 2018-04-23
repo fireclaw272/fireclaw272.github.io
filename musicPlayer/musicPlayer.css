@@ -1,0 +1,270 @@
+@font-face{
+    font-family: title;
+    src:url(fonts/JosefinSans-Regular.tff);
+}
+
+@font-face{
+    font-family: adam;
+    src:url(fonts/Adam.otf);
+}
+@font-face{
+    font-family: code;
+    src:url(fonts/codeLight.otf);
+}
+@font-face{
+    font-family: sansLight;
+    src:url(fonts/sansLight.otf);
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;   /*remove scrollbar space */
+    height:0px;
+}
+::-webkit-scrollbar-track{
+    background-color:#f1f1f1;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color:#bcd5ff;
+}
+
+#controller{
+    background-color:rgba(120, 120, 120, 0.5);
+    width:575px;
+    height:200px;
+    position:absolute;
+    bottom:35px;
+    left:30px;
+    opacity:0;
+    transition: 0.5s linear;
+}
+img{
+    width:50px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#backBtn{
+    position:absolute;
+    bottom:35px;
+    left:175px;
+}
+
+#playPause{
+    position:absolute;
+    bottom:35px;
+    left:250px;
+}
+
+#forwardBtn{
+    position:absolute;
+    bottom:35px;
+    left:325px;
+}
+#shuffle{
+    position:absolute;
+    bottom:40px;
+    left:50px;
+    width:40px;
+}
+#loop{
+    position:absolute;
+    bottom:40px;
+    left:450px;
+    width:40px;
+    filter: invert(0);
+}
+
+#volume{
+    position:absolute;
+    bottom:120px;
+    left:400px;
+    width:40px;
+}
+
+#volumeContainer{
+    height:90%;
+    width:10px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background-color: rgba(200,200,200,0.5);
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+#currentVolume{
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom:0px;
+    background-color:rgba(0,200,255,0.5);
+    opacity:0;
+    transition: opacity 0.5s linear;
+}
+
+#video{
+    width:200px;
+    height:200px;
+    margin:0px;
+    padding:0px;
+    object-fit:cover;
+    background:rgba(255,255,255,1);
+    z-index:-100;
+}
+#name{
+    padding:0px;
+    margin:0px;
+    padding-top:20px;
+    text-align:center;
+    font-size:25px;
+    color:white;
+    font-family:title;
+    font-weight:bold;
+}
+#author{
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    padding-top:15px;
+    color:rgba(200,200,200,1);
+    font-size:15px;
+    font-family:Verdana;
+    font-weight:bold;
+}
+
+#controller:hover{
+    opacity:1;
+}
+
+#dampener{
+    width:1920px;
+    height:500px;
+    background: rgb(0,0,0);
+    opacity:0;
+    z-index:0;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+#timeBar{
+     -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width:100%;
+    height:5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    transition: opacity .2s;
+    position:absolute;
+    bottom:-5px;  
+}
+
+#timeBar:hover {
+    opacity: 1;
+}
+
+#timeBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: rgb(100,150,255);
+    cursor: pointer;
+    border-radius: 50%;  
+}
+
+#timeBar::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%px;  
+}
+
+.timeDisplay{
+    margin:0px;
+    padding:5px;
+    position:Absolute;
+    color:white;
+    font-family:cursive;
+    font-size:10px;
+}
+
+#currentTime{
+    bottom:10px;
+    left:10px;
+}
+#maxTime{
+   bottom:10px;
+    right:10px;
+}
+
+#files{
+   z-index:1;
+   position:absolute;
+   left:0px;
+   top:0px;
+   opacity:0;
+    width:100px;
+}
+
+#files:hover{
+   opacity:1;
+}
+
+#playlist{
+    width:310px;
+    height:100%;
+    z-index:1;
+    position:absolute;
+    top:0px;
+    right:0px;
+    overflow-y:auto;
+    transition-duration: 1s;
+    opacity:0;
+}
+
+#playlist:hover{
+    opacity:1;
+}
+
+.playlistItem{
+    border-bottom:2px solid black;
+    font-family:title;
+    font-weight:bold;
+    z-index:1;
+    width:100%;
+    height:75px;
+    background-color:#e5e5e5;
+    overflow:hidden;
+}
+
+.title{
+    padding:13px 15px 0px 60px;
+    margin:0px;
+    font-family:adam;
+    font-size:15px;
+    height:30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.author{
+    padding:8px 10px 0px 60px;
+    margin:0px;
+    font-size:12px;
+    font-family:sansLight;
+    font-weight:600;
+}
+
+.current{
+    background-color:#ffffff;
+}
