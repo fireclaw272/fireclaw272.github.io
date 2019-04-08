@@ -2,7 +2,7 @@ window.addEventListener('load', main);
 function main(){
     var button = document.getElementById("button");
     var textBox = document.getElementById("answerBox");
-    var targetURL = "https://google.com";
+    var targetURL = "https://fireclaw272.github.io/SEA_Admit/letter/";
     
     function checkAnswer(){
         var value = answerBox.value;
