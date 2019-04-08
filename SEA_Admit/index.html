@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+        <style>
+            .question{
+                position:absolute;
+                top:40%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-align:center;
+            }
+            .question input{
+                border:1px solid black;
+            }
+            .error{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="question" id='container'>
+            <h1>Security Question</h1>
+            <h2>Whose birthday did we celebrate on the Saturday of Spring Break?</h1>
+            <input type="text" name="answer" id="answerBox">
+            <button id='button'>Submit</button>
+        </div>
+    </body>
+</html>
